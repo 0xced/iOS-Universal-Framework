@@ -21,10 +21,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		DA1E8E75138D5B1800B1E5BC /* ___PROJECTNAME___.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA1E8E5D138D5A6B00B1E5BC /* ___PROJECTNAME___.bundle */; };
 		DADBED6513852CA100B964B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBED6413852CA000B964B3 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA1E8E62138D5A9A00B1E5BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADBED5713852CA000B964B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA1E8E5C138D5A6B00B1E5BC;
+			remoteInfo = Resources;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DA1E8E5D138D5A6B00B1E5BC /* ___PROJECTNAME___.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "___PROJECTNAME___.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADBED6113852CA000B964B3 /* ___PROJECTNAME___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = "___PROJECTNAME___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADBED6413852CA000B964B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DADBED6A13852CA100B964B3 /* ___PROJECTNAMEASIDENTIFIER____-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "___PROJECTNAMEASIDENTIFIER____-Info.plist"; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				DADBED6113852CA000B964B3 /* ___PROJECTNAME___.framework */,
+				DA1E8E5D138D5A6B00B1E5BC /* ___PROJECTNAME___.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +111,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DA1E8E5C138D5A6B00B1E5BC /* Resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1E8E61138D5A6C00B1E5BC /* Build configuration list for PBXNativeTarget "Resources" */;
+			buildPhases = (
+				DA1E8E59138D5A6B00B1E5BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resources;
+			productName = Resources;
+			productReference = DA1E8E5D138D5A6B00B1E5BC /* ___PROJECTNAME___.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		DADBED6013852CA000B964B3 /* ___PROJECTNAME___ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADBED7113852CA100B964B3 /* Build configuration list for PBXNativeTarget "___PROJECTNAME___" */;
@@ -110,6 +138,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA1E8E63138D5A9A00B1E5BC /* PBXTargetDependency */,
 			);
 			name = "___PROJECTNAME___";
 			productName = "___PROJECTNAME___";
@@ -134,16 +163,25 @@
 			projectRoot = "";
 			targets = (
 				DADBED6013852CA000B964B3 /* ___PROJECTNAME___ */,
+				DA1E8E5C138D5A6B00B1E5BC /* Resources */,
 				DADBED6713852CA100B964B3 /* Universal Framework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA1E8E59138D5A6B00B1E5BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DADBED5F13852CA000B964B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1E8E75138D5B1800B1E5BC /* ___PROJECTNAME___.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +214,33 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DA1E8E63138D5A9A00B1E5BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA1E8E5C138D5A6B00B1E5BC /* Resources */;
+			targetProxy = DA1E8E62138D5A9A00B1E5BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DA1E8E5F138D5A6C00B1E5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "___PROJECTNAME___/___PROJECTNAMEASIDENTIFIER____-Info.plist";
+				PRODUCT_NAME = "___PROJECTNAME___";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DA1E8E60138D5A6C00B1E5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "___PROJECTNAME___/___PROJECTNAMEASIDENTIFIER____-Info.plist";
+				PRODUCT_NAME = "___PROJECTNAME___";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		DADBED6F13852CA100B964B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -264,6 +328,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA1E8E61138D5A6C00B1E5BC /* Build configuration list for PBXNativeTarget "Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1E8E5F138D5A6C00B1E5BC /* Debug */,
+				DA1E8E60138D5A6C00B1E5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DADBED5A13852CA000B964B3 /* Build configuration list for PBXProject "___PROJECTNAME___" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
