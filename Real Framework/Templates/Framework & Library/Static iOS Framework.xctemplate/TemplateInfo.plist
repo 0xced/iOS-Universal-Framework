@@ -21,7 +21,7 @@
 	<array>
 		<dict>
 			<key>ProductType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>com.apple.product-type.framework.static</string>
 			<key>SharedSettings</key>
 			<dict>
 				<key>WRAPPER_EXTENSION</key>
@@ -300,8 +300,6 @@ fi
 			<array>
 				<string>Foundation</string>
 			</array>
-            <key>ProductType</key>
-            <string>com.apple.product-type.framework.static</string>
 		</dict>
 		<dict>
 			<key>ProductType</key>
