@@ -35,6 +35,10 @@
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
 			</dict>
+			<key>Dependencies</key>
+			<array>
+				<integer>1</integer>
+			</array>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
@@ -298,6 +302,26 @@ fi
 			</array>
             <key>ProductType</key>
             <string>com.apple.product-type.framework.static</string>
+		</dict>
+		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.bundle</string>
+			<key>Name</key>
+			<string>Resources</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>___PACKAGENAME___</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 	<key>Options</key>
