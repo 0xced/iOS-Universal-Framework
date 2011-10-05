@@ -367,6 +367,11 @@ fi
 		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
 		<string>___PACKAGENAME___-Info.plist:iosStaticFramework</string>
 		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
+		<string>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.h:comments</string>
+		<string>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.h:objC:importFoundation</string>
+		<string>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.h:objC:code</string>
+		<string>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.m:comments</string>
+		<string>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.m:objC:code</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -392,6 +397,42 @@ fi
 &lt;key&gt;NSPrincipalClass&lt;/key&gt;
 &lt;string&gt;&lt;/string&gt;
 </string>
+		<key>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.h</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array>
+				<integer>0</integer>
+			</array>
+		</dict>
+		<key>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.h:objC:code</key>
+		<string>@interface NSBundle (___PACKAGENAMEASIDENTIFIER___Bundle)
+
++ (NSBundle *)___PACKAGENAMEASIDENTIFIER___Bundle;
+
+@end</string>
+		<key>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.m</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array>
+				<integer>0</integer>
+			</array>
+		</dict>
+		<key>NSBundle+___PACKAGENAMEASIDENTIFIER___Bundle.m:objC:code</key>
+		<string>#import "___FILEBASENAME___.h"
+
+@implementation NSBundle (___PACKAGENAMEASIDENTIFIER___Bundle)
+
++ (NSBundle *)___PACKAGENAMEASIDENTIFIER___Bundle
+{
+	static NSBundle *___PACKAGENAMEASIDENTIFIER___Bundle;
+	static dispatch_once_t once;
+	dispatch_once(&amp;once, ^{
+		___PACKAGENAMEASIDENTIFIER___Bundle = [[NSBundle alloc] initWithURL:[[NSBundle mainBundle] URLForResource:@"___PACKAGENAME___" withExtension:@"bundle"]];
+	});
+	return ___PACKAGENAMEASIDENTIFIER___Bundle;
+}
+
+@end</string>
 	</dict>
 </dict>
 </plist>
