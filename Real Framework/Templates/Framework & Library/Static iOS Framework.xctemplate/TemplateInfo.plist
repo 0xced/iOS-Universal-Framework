@@ -39,6 +39,10 @@
 			<array>
 				<integer>1</integer>
 			</array>
+			<key>ProductDependencies</key>
+			<array>
+				<integer>1</integer>
+			</array>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
