@@ -308,6 +308,8 @@ fi
 			<string>Resources</string>
 			<key>SharedSettings</key>
 			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/___PACKAGENAME___-Info.plist</string>
 				<key>PRODUCT_NAME</key>
 				<string>___PACKAGENAME___</string>
 				<key>WRAPPER_EXTENSION</key>
